@@ -1,61 +1,56 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prefeitura de Pimenta Bueno - Carta de Serviços</title>
-<meta name="description" content="Carta de Serviços da Prefeitura Municipal de Pimenta Bueno - RO. Informações sobre departamentos, competências e atendimento ao cidadão.">
-<meta name="author" content="Prefeitura de Pimenta Bueno">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Serviço</title>
+    <meta name="description" content="Carta de Serviços da Prefeitura Municipal de Pimenta Bueno - RO. Informações sobre departamentos, competências e atendimento ao cidadão.">
+    <meta name="author" content="Prefeitura de Pimenta Bueno">
+    
+    <link rel="icon" type="image/png" href="assets/images/brasao.png">
+    
+    <meta property="og:title" content="Carta de Serviços">
+    <meta property="og:description" content="Carta de Serviços da Prefeitura Municipal de Pimenta Bueno - RO">
+    <meta property="og:type" content="website">
+    
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
 
-<link rel="icon" type="image/png" href="assets/images/brasao.png">
-
-<meta property="og:title" content="Prefeitura de Pimenta Bueno - Carta de Serviços">
-<meta property="og:description" content="Carta de Serviços da Prefeitura Municipal de Pimenta Bueno - RO">
-<meta property="og:type" content="website">
-
-<script src="[https://unpkg.com/lucide@latest/dist/umd/lucide.js](https://unpkg.com/lucide@latest/dist/umd/lucide.js)"></script>
-
-<link rel="stylesheet" href="styles.css">
-
-<script src="[https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js](https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js)"></script>
-<script src="[https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js](https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js)"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
 </head>
 <body>
 <header class="header">
-<div class="header-background-image"></div>
-<div class="container">
-<div class="header-content">
-<div class="header-title-section">
-<div class="header-icon-title">
-<div class="header-icon">
-<img src="assets/images/brasao.png" alt="Brasão da Prefeitura" style="width: 2.5rem; height: 2.5rem;">
-</div>
-<div>
-<h1>PREFEITURA DO MUNICÍPIO DE PIMENTA BUENO</h1>
-<p class="header-subtitle">CARTA DE SERVIÇO</p>
-</div>
-</div>
+    <div class="header-background-image"></div>
+    <div class="container">
+        <div class="header-content">
+            <div class="header-title-section">
+                <div class="header-icon-title">
+                    <div>
+                        <h1>PREFEITURA DO MUNICÍPIO DE PIMENTA BUENO</h1>
+                        <p class="header-subtitle">CARTA DE SERVIÇO</p>
+                    </div>
+                </div>
+                
+                <div class="header-secretaria-logo">
+                    <img src="assets/images/logo_secretaria.png" alt="Logo da Secretaria" style="width: 184px; height: 92px;">
+                </div>
 
                 <div class="main-cta">
-                    <p class="cta-text">Acesse nossas redes sociais e site da prefeitura:</p>
                     <div class="cta-buttons">
-                        <a href="[https://pimentabueno.ro.gov.br/site/](https://pimentabueno.ro.gov.br/site/)" target="_blank" class="cta-button">
+                        <a href="https://pimentabueno.ro.gov.br/site/" target="_blank" class="cta-button">
                             <img src="assets/images/site.svg" alt="Ícone Site" class="cta-svg-icon">
-                            Site Oficial
                         </a>
-                        <a href="[https://www.facebook.com/PrefeituradePimentaBueno](https://www.facebook.com/PrefeituradePimentaBueno)" target="_blank" class="cta-button">
+                        <a href="https://www.facebook.com/PrefeituradePimentaBueno" target="_blank" class="cta-button">
                             <img src="assets/images/facebook.svg" alt="Ícone Facebook" class="cta-svg-icon">
-                            Facebook
                         </a>
-                        <a href="[https://www.instagram.com/prefeiturapb/](https://www.instagram.com/prefeiturapb/)" target="_blank" class="cta-button">
+                        <a href="https://www.instagram.com/prefeiturapb/" target="_blank" class="cta-button">
                             <img src="assets/images/instagram.svg" alt="Ícone Instagram" class="cta-svg-icon">
-                            Instagram
                         </a>
-                        <a href="[https://www.youtube.com/@PrefeituradePimentaBueno](https://www.youtube.com/@PrefeituradePimentaBueno)" target="_blank" class="cta-button">
+                        <a href="https://www.youtube.com/@PrefeituradePimentaBueno" target="_blank" class="cta-button">
                             <img src="assets/images/youtube.svg" alt="Ícone YouTube" class="cta-svg-icon">
-                            YouTube
                         </a>
                     </div>
                 </div>
@@ -64,19 +59,19 @@
             <div class="contact-grid">
                 <div class="contact-item">
                     <i data-lucide="map-pin"></i>
-                    <a href="[https://www.google.com/maps/search/?api=1&query=SEU_ENDERECO_AQUI](https://www.google.com/maps/search/?api=1&query=SEU_ENDERECO_AQUI)" target="_blank" class="map-link">
-                        <span>Av. Castelo Branco, 1046 - Pimenta Bueno–RO, 76970-000</span>
+                    <a href="https://www.google.com/maps/place/Prefeitura+de+Pimenta+Bueno/@-11.6708694,-61.1889152,135m/data=!3m1!1e3!4m6!3m5!1s0x93b7e5d11ca56f83:0x57d5df651de4f8c3!8m2!3d-11.6708446!4d-61.1884997!16s%2Fg%2F1tdx0mq7?entry=ttu&g_ep=EgoyMDI1MDcyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-link">
+                        <span>Av. Castelo Branco, 1046 - Pimenta Bueno - RO, 76970-000</span>
                     </a>
                 </div>
                 
                 <div class="contact-item">
-                    <a href="[https://wa.me/5569981162254](https://wa.me/5569981162254)" target="_blank" class="whatsapp-link">
+                    <a href="https://wa.me/5569981162254" target="_blank" class="whatsapp-link">
                         <img src="assets/images/whatsapp-icon.svg" alt="WhatsApp Icon" class="whatsapp-svg-icon">
-                        <span>(69) 98116-2254</span>
+                        <span>Balcão de Atendimento (69) 98116-2254</span>
                     </a>
-                    <a href="[https://wa.me/5569981699989](https://wa.me/5569981699989)" target="_blank" class="whatsapp-link">
+                    <a href="https://wa.me/5569981699989" target="_blank" class="whatsapp-link">
                         <img src="assets/images/whatsapp-icon.svg" alt="WhatsApp Icon" class="whatsapp-svg-icon">
-                        <span>(69) 98169-9989</span>
+                        <span>Ouvidoria   (69) 98169-9989</span>
                     </a>
                 </div>
                 
@@ -339,7 +334,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>© 2024 Prefeitura Municipal de Pimenta Bueno - Todos os direitos reservados</p>
+            <p>© 2025 Prefeitura Municipal de Pimenta Bueno - Todos os direitos reservados</p>
         </div>
     </div>
 </footer>
