@@ -5,7 +5,7 @@
     --cor-primaria-clara: rgb(191, 230, 191);
     --cor-destaque: rgb(0, 128, 0); /* Amarelo para CTAs */
     --cor-destaque-hover: rgb(2, 99, 2);
-    --cor-destaque-alt: rgb(255, 213, 0); /* Amarelo para subtítulos e foco */
+    --cor-destaque-alt: rgb(0, 158, 21); /* Amarelo para subtítulos e foco */
 
     /* Cores de Texto */
     --texto-primario: rgb(46, 54, 61);
@@ -14,9 +14,19 @@
     --texto-sobre-destaque: rgb(46, 54, 61); /* Texto escuro para contraste em botões amarelos */
 
     /* Cores de Fundo e Bordas */
-    --fundo-claro: rgb(250, 250, 250);
-    --fundo-branco: rgb(255, 255, 255);
-    --borda-sutil: rgb(240, 244, 248);
+    --fundo-claro: rgb(180, 180, 148); /* Alterado para um verde bem claro */
+    --fundo-branco: rgb(230, 230, 230);
+    --borda-sutil: rgb(0, 145, 7);
+
+    /* Cores dos Botões CTA (Adicionado para fácil customização) */
+    --cor-cta-site: rgb(74, 144, 226);       /* Azul genérico */
+    --cor-cta-site-hover: rgb(53, 122, 189);
+    --cor-cta-facebook: rgb(24, 119, 242);     /* Azul do Facebook */
+    --cor-cta-facebook-hover: rgb(22, 111, 229);
+    --cor-cta-instagram: rgb(228, 64, 95);      /* Cor principal do Instagram */
+    --cor-cta-instagram-hover: rgb(209, 47, 78);
+    --cor-cta-youtube: rgb(255, 0, 0);         /* Vermelho do YouTube */
+    --cor-cta-youtube-hover: rgb(204, 0, 0);
 
     /* Medidas */
     --raio-borda: 0.5rem;
@@ -160,7 +170,7 @@ body {
 
 .cta-button {
     background: var(--cor-destaque);
-    color: var(--texto-sobre-destaque); /* Cor alterada para melhor contraste */
+    color: var(--texto-sobre-escuro); /* Alterado para branco para melhor contraste nos botões coloridos */
     padding: 0.75rem 1.25rem;
     border-radius: var(--raio-borda);
     text-decoration: none;
@@ -175,7 +185,6 @@ body {
 }
 
 .cta-button:hover {
-    background: var(--cor-destaque-hover);
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
@@ -185,8 +194,21 @@ body {
     height: 1.25rem;
     display: block;
     flex-shrink: 0;
+    /* Adicionado para inverter a cor do ícone para branco, garantindo contraste */
+    filter: invert(1) brightness(2);
 }
 
+/* Cores específicas para cada botão CTA usando as variáveis */
+.cta-site { background-color: var(--cor-cta-site); }
+.cta-facebook { background-color: var(--cor-cta-facebook); }
+.cta-instagram { background-color: var(--cor-cta-instagram); }
+.cta-youtube { background-color: var(--cor-cta-youtube); }
+
+/* Cores específicas para o hover de cada botão */
+.cta-site:hover { background-color: var(--cor-cta-site-hover); }
+.cta-facebook:hover { background-color: var(--cor-cta-facebook-hover); }
+.cta-instagram:hover { background-color: var(--cor-cta-instagram-hover); }
+.cta-youtube:hover { background-color: var(--cor-cta-youtube-hover); }
 
 .contact-grid {
     display: grid;
