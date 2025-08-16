@@ -3,343 +3,356 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carta de Serviço</title>
+    <title>Carta de Serviço - Pimenta Bueno</title>
     <meta name="description" content="Carta de Serviços da Prefeitura Municipal de Pimenta Bueno - RO. Informações sobre departamentos, competências e atendimento ao cidadão.">
     <meta name="author" content="Prefeitura de Pimenta Bueno">
     
-    <link rel="icon" type="image/png" href="assets/images/brasao.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <meta property="og:title" content="Carta de Serviços">
-    <meta property="og:description" content="Carta de Serviços da Prefeitura Municipal de Pimenta Bueno - RO">
-    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
     
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-    
-    <link rel="stylesheet" href="styles.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-<header class="header">
-    <div class="header-background-image"></div>
-    <div class="container">
-        <div class="header-content">
-            <div class="header-title-section">
-                <div class="header-icon-title">
-                    <div>
-                        <h1>PREFEITURA DO MUNICÍPIO DE PIMENTA BUENO</h1>
-                        <p class="header-subtitle">CARTA DE SERVIÇO</p>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+<div class="logo-container">
+                </div>
+                
+                <div class="header-text">
+                    <h1>PREFEITURA DE PIMENTA BUENO</h1>
+                    <p class="header-subtitle">CARTA DE SERVIÇOS SRI</p>
+                </div>
+                
+                <div class="social-buttons">
+                    <a href="https://pimentabueno.ro.gov.br/site/" target="_blank" class="social-button site">
+                        <i class="fas fa-globe"></i>
+                        <span>Site Oficial</span>
+                    </a>
+                    <a href="https://www.facebook.com/PrefeituradePimentaBueno" target="_blank" class="social-button facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/prefeiturapb/" target="_blank" class="social-button instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.youtube.com/@PrefeituradePimentaBueno" target="_blank" class="social-button youtube">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-title">ENDEREÇO</div>
+                            <div class="contact-value">
+                                <a href="https://www.google.com/maps/place/Prefeitura+de+Pimenta+Bueno/@-11.6711213,-61.1884982,267m/data=!3m1!1e3!4m14!1m7!3m6!1s0x93b7e5005a3b3989:0xcd3130d9b910203b!2sFarm%C3%A1cia+Central+Municipal!8m2!3d-11.6764316!4d-61.1782459!16s%2Fg%2F11w7pywyq6!3m5!1s0x93b7e5d11ca56f83:0x57d5df651de4f8c3!8m2!3d-11.6708446!4d-61.1884997!16s%2Fg%2F1tdx0mq7?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                    Av. Castelo Branco, 1046 - Pimenta Bueno - RO, 76970-000
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="header-secretaria-logo">
-                    <img src="assets/images/logo_secretaria.png" alt="Logo da Secretaria" style="width: 184px; height: 92px;">
-                </div>
-
-                <div class="main-cta">
-                    <div class="cta-buttons">
-                        <a href="https://pimentabueno.ro.gov.br/site/" target="_blank" class="cta-button">
-                            <img src="assets/images/site.svg" alt="Ícone Site" class="cta-svg-icon">
-                        </a>
-                        <a href="https://www.facebook.com/PrefeituradePimentaBueno" target="_blank" class="cta-button">
-                            <img src="assets/images/facebook.svg" alt="Ícone Facebook" class="cta-svg-icon">
-                        </a>
-                        <a href="https://www.instagram.com/prefeiturapb/" target="_blank" class="cta-button">
-                            <img src="assets/images/instagram.svg" alt="Ícone Instagram" class="cta-svg-icon">
-                        </a>
-                        <a href="https://www.youtube.com/@PrefeituradePimentaBueno" target="_blank" class="cta-button">
-                            <img src="assets/images/youtube.svg" alt="Ícone YouTube" class="cta-svg-icon">
-                        </a>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-title">WHATSAPP</div>
+                            <div class="contact-value">
+                                <a href="https://wa.me/5569981162254" target="_blank">(69) 98116-2254 (Atendimento)</a>
+                                <a href="https://wa.me/5569981699989" target="_blank">(69) 98169-9989 (Ouvidoria)</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div class="contact-grid">
-                <div class="contact-item">
-                    <i data-lucide="map-pin"></i>
-                    <a href="https://www.google.com/maps/place/Prefeitura+de+Pimenta+Bueno/@-11.6708694,-61.1889152,135m/data=!3m1!1e3!4m6!3m5!1s0x93b7e5d11ca56f83:0x57d5df651de4f8c3!8m2!3d-11.6708446!4d-61.1884997!16s%2Fg%2F1tdx0mq7?entry=ttu&g_ep=EgoyMDI1MDcyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="map-link">
-                        <span>Av. Castelo Branco, 1046 - Pimenta Bueno - RO, 76970-000</span>
-                    </a>
-                </div>
-                
-                <div class="contact-item">
-                    <a href="https://wa.me/5569981162254" target="_blank" class="whatsapp-link">
-                        <img src="assets/images/whatsapp-icon.svg" alt="WhatsApp Icon" class="whatsapp-svg-icon">
-                        <span>Balcão de Atendimento (69) 98116-2254</span>
-                    </a>
-                    <a href="https://wa.me/5569981699989" target="_blank" class="whatsapp-link">
-                        <img src="assets/images/whatsapp-icon.svg" alt="WhatsApp Icon" class="whatsapp-svg-icon">
-                        <span>Ouvidoria   (69) 98169-9989</span>
-                    </a>
-                </div>
-                
-                <div class="contact-item">
-                    <i data-lucide="mail"></i>
-                    <a href="mailto:gabinete@pimentabueno.ro.gov.br" class="mail-link">
-                        <span>gabinete@pimentabueno.ro.gov.br</span>
-                    </a>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-title">E-MAIL</div>
+                            <div class="contact-value">
+                                <a href="mailto:gabinete@pimentabueno.ro.gov.br">gabinete@pimentabueno.ro.gov.br</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</header>
-
-<main class="main">
-    <div class="container">
-        <section id="sri-sede-administrativa" class="department-section">
-            <div class="department-card">
-                <div class="card-header">
-                    <div class="card-header-content">
+    </header>
+    
+    
+    <main class="main-content">
+        <div class="container">
+            <h2 class="section-title">Departamentos e Serviços</h2>
+            
+            <div class="department-grid">
+                <div class="department-card" id="sri">
+                    <div class="card-header">
                         <div class="card-icon">
-                            <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><path d="M20 12v.01"/><path d="M10 12v.01"/></svg>
+                            <i class="fas fa-sitemap"></i>
                         </div>
-                        <div class="card-title-section">
-                            <h2 class="card-title">SRI: SEDE ADMINISTRATIVA</h2>
+                        <div class="card-title">
+                            <h3>SRI: SEDE ADMINISTRATIVA</h3>
                             <div class="card-director">
-                                <i data-lucide="user"></i>
+                                <i class="fas fa-user"></i>
                                 <span>Luiz Henrique Sanches Lima</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="card-content">
-                    <div class="contact-info">
-                        <div class="contact-detail">
-                            <img src="assets/images/location.svg" alt="Ícone de Localização" class="contact-svg-icon">
-                            <a href="http://googleusercontent.com/maps.google.com/search?q=Avenida+Castelo+Branco,1046,+Pioneiros,+Pimenta+Bueno,RO" target="_blank" class="map-link">
-                                <span>Avenida Castelo Branco, 1046, Bairro: Pioneiros, CEP: 76970-000</span>
-                            </a>
-                        </div>
-                        <div class="contact-detail">
-                            <a href="[https://wa.me/5569981562921](https://wa.me/5569981562921)" target="_blank" class="whatsapp-link">
-                                <img src="assets/images/whatsapp-icon.svg" alt="WhatsApp Icon" class="whatsapp-svg-icon">
-                                <span>(69) 9 8156-2921</span>
-                            </a>
-                        </div>
-                        <div class="contact-detail">
-                            <img src="assets/images/email.svg" alt="Ícone de E-mail" class="contact-svg-icon">
-                            <a href="mailto:sri@pimentabueno.ro.gov.br" class="mail-link">
-                                <span>sri@pimentabueno.ro.gov.br</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="competencies">
-                        <h4>Competências:</h4>
-                        <ul class="competencies-list">
-                            <li>A articulação e direcionamento das diretrizes e políticas definidas pelo Chefe do Poder Executivo municipal;</li>
-                            <li>A articulação e mediação do relacionamento político do Poder Executivo municipal com os membros do Poder Legislativo municipal;</li>
-                            <li>A articulação e mediação do relacionamento político do Poder Executivo municipal com os membros do Poder Executivo e Poder Legislativo estadual;</li>
-                            <li>A orientação da atuação política da liderança legislativa, representante do Poder Executivo na Câmara Municipal;</li>
-                            <li>A mediação do relacionamento entre auxiliares do Chefe do Poder Executivo municipal e destes junto ao Chefe do Poder Executivo municipal;</li>
-                            <li>A coordenação geral das ações políticas de governo;</li>
-                            <li>A prestação de assistência ao Chefe do Poder Executivo e a mediação de suas relações políticas com entidades públicas, privadas e público, no âmbito municipal;</li>
-                            <li>A coordenação do suporte financeiro, orçamentário e administrativo dos órgãos de assistência direta ao Prefeito e ao Vice-Prefeito;</li>
-                            <li>A assistência direta e imediata ao Prefeito na sua representação institucional e social, e o apoio protocolar nos atos públicos de que ele participa.</li>
-                        </ul>
-                        <h4>Competências da Secretaria Municipal de Relações Institucionais:</h4>
-                        <ul class="competencies-list">
-                            <li>Articular e direcionar as diretrizes e políticas definidas pelo chefe do poder executivo municipal;</li>
-                            <li>Articular e mediar o relacionamento político do poder executivo municipal com os membros do poder legislativo municipal;</li>
-                            <li>Mediar o relacionamento entre auxiliares do chefe do poder executivo municipal e destes junto ao chefe do poder executivo municipal;</li>
-                            <li>Coordenação geral das ações políticas de governo;</li>
-                            <li>Prestar assistência ao Chefe do Poder Executivo e a mediação de suas relações políticas com entidades públicas, privadas e público no âmbito municipal;</li>
-                            <li>Elaborar e acompanhar proposições, projetos de lei, vetos e informações encaminhados à apreciação dos membros da Câmara Municipal;</li>
-                            <li>Acompanhar as proposituras encaminhadas ao Chefe do Poder Executivo e adotar as providências cabíveis;</li>
-                            <li>Assistência direta e imediata ao Prefeito na sua representação institucional e social e o apoio protocolar nos atos públicos que ele participa.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="central-imprensa-comunicacao" class="department-section">
-            <div class="department-card">
-                <div class="card-header">
-                    <div class="card-header-content">
-                        <div class="card-icon">
-                            <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-newspaper"><path d="M4 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2z"/><path d="M12 2v20"/><path d="M8 7h.01"/><path d="M16 7h.01"/><path d="M8 12h.01"/><path d="M16 12h.01"/><path d="M8 17h.01"/><path d="M16 17h.01"/></svg>
-                        </div>
-                        <div class="card-title-section">
-                            <h2 class="card-title">CENTRAL DE IMPRENSA E COMUNICAÇÃO</h2>
+                    
+                    <div class="card-content">
+                        <div class="contact-info-card">
+                            <div class="contact-item">
+                                <div class="contact-label">Endereço:</div>
+                                <div class="contact-value-card">
+                                    <a href="https://www.google.com/maps/place/Prefeitura+de+Pimenta+Bueno/@-11.6711213,-61.1884982,267m/data=!3m1!1e3!4m14!1m7!3m6!1s0x93b7e5005a3b3989:0xcd3130d9b910203b!2sFarm%C3%A1cia+Central+Municipal!8m2!3d-11.6764316!4d-61.1782459!16s%2Fg%2F11w7pywyq6!3m5!1s0x93b7e5d11ca56f83:0x57d5df651de4f8c3!8m2!3d-11.6708446!4d-61.1884997!16s%2Fg%2F1tdx0mq7?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                        Avenida Castelo Branco, 1046, Bairro: Pioneiros, CEP: 76970-000
+                                    </a>
+                                </div>
                             </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-label">WhatsApp:</div>
+                                <div class="contact-value-card">
+                                    <a href="https://wa.me/5569981562921" target="_blank">(69) 9 8156-2921</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-label">E-mail:</div>
+                                <div class="contact-value-card">
+                                    <a href="mailto:sri@pimentabueno.ro.gov.br">sri@pimentabueno.ro.gov.br</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="competencies">
+                            <h4>Competências da Secretaria Municipal de Relações Institucionais:</h4>
+                            <ul class="competencies-list">
+                                <li>Articular e direcionar as diretrizes e políticas definidas pelo chefe do poder executivo municipal.</li>
+                                <li>Articular e mediar o relacionamento político do poder executivo municipal com os membros do poder legislativo municipal.</li>
+                                <li>Mediar o relacionamento entre auxiliares do chefe do poder executivo municipal e destes junto ao chefe do poder executivo municipal.</li>
+                                <li>Coordenação geral das ações políticas de governo.</li>
+                                <li>Prestar assistência ao Chefe do Poder Executivo e a mediação de suas relações políticas com entidades públicas, privadas e público no âmbito municipal.</li>
+                                <li>Elaborar e acompanhar proposições, projetos de lei, vetos e informações encaminhados à apreciação dos membros da Câmara Municipal.</li>
+                                <li>Acompanhar as proposituras encaminhadas ao Chefe do Poder Executivo e adotar as providências cabíveis.</li>
+                                <li>Assistência direta e imediata ao Prefeito na sua representação institucional e social e o apoio protocolar nos atos públicos que ele participa.</li>
+                            </ul>
+                            <h4>Atribuições do Secretário:</h4>
+                            <ul class="competencies-list">
+                                <li>A articulação e direcionamento das diretrizes e políticas definidas pelo Chefe do Poder Executivo municipal.</li>
+                                <li>A articulação e mediação do relacionamento político do Poder Executivo municipal com os membros do Poder Legislativo municipal.</li>
+                                <li>A articulação e mediação do relacionamento político do Poder Executivo municipal com os membros do Poder Executivo e Poder Legislativo estadual.</li>
+                                <li>A orientação da atuação política da liderança legislativa, representante do Poder Executivo na Câmara Municipal.</li>
+                                <li>A mediação do relacionamento entre auxiliares do Chefe do Poder Executivo municipal e destes junto ao Chefe do Poder Executivo municipal.</li>
+                                <li>A coordenação geral das ações políticas de governo.</li>
+                                <li>A prestação de assistência ao Chefe do Poder Executivo e a mediação de suas relações políticas com entidades públicas, privadas e público, no âmbito municipal.</li>
+                                <li>A coordenação do suporte financeiro, orçamentário e administrativo dos órgãos de assistência direta ao Prefeito e ao Vice-Prefeito.</li>
+                                <li>A assistência direta e imediata ao Prefeito na sua representação institucional e social, e o apoio protocolar nos atos públicos de que ele participa.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="card-content">
-                    <div class="competencies">
-                        <h4>Competências:</h4>
-                        <ul class="competencies-list">
-                            <li>Promover o assessoramento às secretarias e demais órgãos do município em assuntos de comunicação social;</li>
-                            <li>Auxiliar na organização do cerimonial do Prefeito;</li>
-                            <li>Providenciar a seleção dos veículos de comunicação social para os diferentes assuntos de interesse da administração;</li>
-                            <li>Efetuar a preparação de informativos para o público interno e externo da prefeitura;</li>
-                            <li>Promover a organização de arquivos de recortes de jornais e publicações contendo assuntos de interesse do município;</li>
-                            <li>Promover/Auxiliar na cobertura jornalística de atividades e atos de caráter público do município e o noticiário das atividades de interesse público por ela realizadas;</li>
-                            <li>Assessorar na Programação de solenidades e festividades e fazer, preparar e expedir os respectivos convites;</li>
-                            <li>Promover a manutenção de exemplares de requerimentos e formulários a serem preenchidos pelo público, bem como a organização de arquivos de recortes de jornais e publicações contendo assuntos de interesse do município;</li>
-                            <li>Fazer publicar pelos meios de comunicação os atos oficiais do Poder Executivo Municipal, principalmente pela internet;</li>
-                            <li>Ajudar a promover o assessoramento às secretarias e demais órgãos do município em assuntos de comunicação social;</li>
-                            <li>Articular as relações da administração municipal com os órgãos da imprensa;</li>
-                            <li>Efetuar a preparação de informativos para o público interno e externo da prefeitura, artes e vídeos, etc.;</li>
-                            <li>Organizar e manter atualizado o acervo de vídeos e fotografias de interesse do Município;</li>
-                            <li>Assessorar as Secretarias na alimentação do portal de transparência e site oficial do município;</li>
-                            <li>Executar outras atividades correlatas.</li>
-                        </ul>
+                <div class="department-card" id="imprensa">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="card-title">
+                            <h3>CENTRAL DE IMPRENSA E COMUNICAÇÃO</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="competencies">
+                            <h4>Competências:</h4>
+                            <ul class="competencies-list">
+                                <li>Promover o assessoramento às secretarias e demais órgãos do município em assuntos de comunicação social.</li>
+                                <li>Auxiliar na organização do cerimonial do Prefeito.</li>
+                                <li>Providenciar a seleção dos veículos de comunicação social para os diferentes assuntos de interesse da administração.</li>
+                                <li>Efetuar a preparação de informativos para o público interno e externo da prefeitura, artes e vídeos, etc..</li>
+                                <li>Promover a organização de arquivos de recortes de jornais e publicações contendo assuntos de interesse do município.</li>
+                                <li>Promover/Auxiliar na cobertura jornalística de atividades e atos de caráter público do município.</li>
+                                <li>Assessorar na Programação de solenidades e festividades e fazer, preparar e expedir os respectivos convites.</li>
+                                <li>Fazer publicar pelos meios de comunicação os atos oficiais do Poder Executivo Municipal, principalmente pela internet.</li>
+                                <li>Articular as relações da administração municipal com os órgãos da imprensa.</li>
+                                <li>Organizar e manter atualizado o acervo de vídeos e fotografias de interesse do Município.</li>
+                                <li>Assessorar as Secretarias na alimentação do portal de transparência e site oficial do município.</li>
+                                <li>Executar outras atividades correlatas.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="central-marketing" class="department-section">
-            <div class="department-card">
-                <div class="card-header">
-                    <div class="card-header-content">
+                
+                <div class="department-card" id="marketing">
+                    <div class="card-header">
                         <div class="card-icon">
-                            <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-megaphone"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 7v10l10 5 10-5V7"/><path d="M12 12V22"/><path d="M12 2l-10 5"/><path d="M22 7l-10 5"/></svg>
+                            <i class="fas fa-users-line"></i>
                         </div>
-                        <div class="card-title-section">
-                            <h2 class="card-title">CENTRAL DE MARKETING</h2>
+                        <div class="card-title">
+                            <h3>CENTRAL DE MARKETING</h3>
                             <div class="card-director">
-                                <i data-lucide="user"></i>
+                                <i class="fas fa-user"></i>
                                 <span>Jacson Silva de Jesus</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="card-content">
-                    <div class="competencies">
-                        <h4>Competências:</h4>
-                        <ul class="competencies-list">
-                            <li>Organizar as ações de comunicação interna e externa do município, na realização de eventos e no desenvolvimento de projetos diversos voltados a divulgação dos atos do município;</li>
-                            <li>Apoiar na organização e realização de eventos internos, reunião de motivação de servidores, suporte às reuniões de formação e qualificação;</li>
-                            <li>Confeccionar apresentações dos projetos do município com criação de banners, convites, bem como vídeos com registros dos eventos;</li>
-                            <li>Assessorar na manutenção dos conteúdos do site do município;</li>
-                            <li>Promover o assessoramento às secretarias e demais órgãos do município em assuntos de divulgação;</li>
-                            <li>Estabelecer indicadores de desempenho nas campanhas de divulgação das atividades do município apresentando resultados ao Chefe do Executivo e Secretários;</li>
-                            <li>Organizar a cobertura jornalística de atividades e atos de caráter público do município e o noticiário das atividades de interesse público por ela realizadas;</li>
-                            <li>Articular as relações da administração municipal com os órgãos da imprensa;</li>
-                            <li>Efetuar o planejamento de campanhas de divulgação administrativa;</li>
-                            <li>Efetuar a preparação de informativos para o público interno e externo da prefeitura, artes e vídeos, etc.;</li>
-                            <li>Organizar e manter atualizado o acervo de vídeos e fotografias de interesse do município;</li>
-                            <li>Executar outras atividades correlatas.</li>
-                        </ul>
+                    
+                    <div class="card-content">
+                        <div class="competencies">
+                            <h4>Competências:</h4>
+                            <ul class="competencies-list">
+                                <li>Organizar as ações de comunicação interna e externa do município, na realização de eventos e no desenvolvimento de projetos diversos voltados a divulgação dos atos do município.</li>
+                                <li>Apoiar na organização e realização de eventos internos, reunião de motivação de servidores, suporte às reuniões de formação e qualificação.</li>
+                                <li>Confeccionar apresentações dos projetos do município com criação de banners, convites, bem como vídeos com registros dos eventos.</li>
+                                <li>Assessorar na manutenção dos conteúdos do site do município.</li>
+                                <li>Promover o assessoramento às secretarias e demais órgãos do município em assuntos de divulgação.</li>
+                                <li>Estabelecer indicadores de desempenho nas campanhas de divulgação das atividades do município.</li>
+                                <li>Organizar a cobertura jornalística de atividades e atos de caráter público do município e o noticiário das atividades de interesse público por ela realizadas.</li>
+                                <li>Articular as relações da administração municipal com os órgãos da imprensa.</li>
+                                <li>Efetuar o planejamento de campanhas de divulgação administrativa.</li>
+                                <li>Efetuar a preparação de informativos para o público interno e externo da prefeitura, artes e vídeos, etc..</li>
+                                <li>Organizar e manter atualizado o acervo de vídeos e fotografias de interesse do município.</li>
+                                <li>Executar outras atividades correlatas.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="ouvidoria" class="department-section">
-            <div class="department-card">
-                <div class="card-header">
-                    <div class="card-header-content">
+                
+                <div class="department-card" id="ouvidoria">
+                    <div class="card-header">
                         <div class="card-icon">
-                            <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ear"><path d="M5.5 10c.8-.8 1.6-1.6 3-1.6s2.2.8 3 1.6"/><path d="M12 21a9 9 0 0 0 0-18"/><path d="M2 14c-.3-1.7-.5-3.4-.5-5A7.5 7.5 0 0 1 12 2"/><path d="M22 14a9 9 0 0 0 0-18"/></svg>
+                            <i class="fas fa-comment-alt"></i>
                         </div>
-                        <div class="card-title-section">
-                            <h2 class="card-title">OUVIDORIA</h2>
+                        <div class="card-title">
+                            <h3>OUVIDORIA</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <div class="contact-info-card">
+                            <div class="contact-item">
+                                <div class="contact-label">Endereço:</div>
+                                <div class="contact-value-card">
+                                    <a href="https://www.google.com/maps/place/Prefeitura+de+Pimenta+Bueno/@-11.6711213,-61.1884982,267m/data=!3m1!1e3!4m14!1m7!3m6!1s0x93b7e5005a3b3989:0xcd3130d9b910203b!2sFarm%C3%A1cia+Central+Municipal!8m2!3d-11.6764316!4d-61.1782459!16s%2Fg%2F11w7pywyq6!3m5!1s0x93b7e5d11ca56f83:0x57d5df651de4f8c3!8m2!3d-11.6708446!4d-61.1884997!16s%2Fg%2F1tdx0mq7?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                        Avenida Castelo Branco, 1046, Bairro: Pioneiros, CEP: 76970-000
+                                    </a>
+                                </div>
                             </div>
-                    </div>
-                </div>
-                
-                <div class="card-content">
-                    <div class="contact-info">
-                        <div class="contact-detail">
-                            <img src="assets/images/location.svg" alt="Ícone de Localização" class="contact-svg-icon">
-                            <a href="http://googleusercontent.com/maps.google.com/search?q=Avenida+Castelo+Branco,1046,+Pioneiros,+Pimenta+Bueno,RO" target="_blank" class="map-link">
-                                <span>Avenida Castelo Branco, 1046, Bairro: Pioneiros, CEP: 76970-000</span>
-                            </a>
+                            
+                            <div class="contact-item">
+                                <div class="contact-label">WhatsApp:</div>
+                                <div class="contact-value-card">
+                                    <a href="https://wa.me/5569981699989" target="_blank">(69) 9 8169-9989 (Telefone/Ouvidoria)</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-label">E-mail:</div>
+                                <div class="contact-value-card">
+                                    <a href="mailto:ouvidoria@pimentabueno.ro.gov.br">ouvidoria@pimentabueno.ro.gov.br</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="contact-detail">
-                            <a href="[https://wa.me/5569981699989](https://wa.me/5569981699989)" target="_blank" class="whatsapp-link">
-                                <img src="assets/images/whatsapp-icon.svg" alt="WhatsApp Icon" class="whatsapp-svg-icon">
-                                <span>(69) 9 8169-9989 (Telefone/Ouvidoria)</span>
-                            </a>
+                        
+                        <div class="competencies">
+                            <h4>Competências:</h4>
+                            <ul class="competencies-list">
+                                <li>Promover a participação do usuário na administração pública, em cooperação com outras entidades de defesa do usuário.</li>
+                                <li>Acompanhar a prestação dos serviços, visando a garantir a sua efetividade.</li>
+                                <li>Propor aperfeiçoamentos na prestação dos serviços.</li>
+                                <li>Auxiliar na prevenção e correção dos atos e procedimentos incompatíveis com os princípios estabelecidos na Lei 13.460/2017.</li>
+                                <li>Propor a adoção de medidas para a defesa dos direitos do usuário.</li>
+                                <li>Receber, analisar e encaminhar às autoridades competentes as manifestações, acompanhando o tratamento e a efetiva conclusão das manifestações de usuário perante órgão ou entidade a que se vincula.</li>
+                                <li>Promover a adoção de mediação e conciliação entre o usuário e o órgão ou a entidade pública, sem prejuízo de outros órgãos competentes.</li>
+                                <li>Receber, analisar e responder, por meio de mecanismos proativos e reativos, as manifestações encaminhadas por usuários de serviços públicos.</li>
+                                <li>Elaborar, anualmente, relatório de gestão, que deverá consolidar as informações das manifestações e, com base nelas, apontar falhas e sugerir melhorias na prestação de serviços públicos.</li>
+                                <li>Coordenar os servidores subordinados ao órgão, podendo distribuir tarefas e delegar funções.</li>
+                                <li>Executar outras tarefas correlatas.</li>
+                            </ul>
                         </div>
-                        <div class="contact-detail">
-                            <img src="assets/images/email.svg" alt="Ícone de E-mail" class="contact-svg-icon">
-                            <a href="mailto:ouvidoria@pimentabueno.ro.gov.br" class="mail-link">
-                                <span>ouvidoria@pimentabueno.ro.gov.br</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="competencies">
-                        <h4>Competências:</h4>
-                        <ul class="competencies-list">
-                            <li>Promover a participação do usuário na administração pública, em cooperação com outras entidades de defesa do usuário;</li>
-                            <li>Acompanhar a prestação dos serviços, visando a garantir a sua efetividade;</li>
-                            <li>Propor aperfeiçoamentos na prestação dos serviços;</li>
-                            <li>Auxiliar na prevenção e correção dos atos e procedimentos incompatíveis com os princípios estabelecidos na Lei 13.460/2017;</li>
-                            <li>propor a adoção de medidas para a defesa dos direitos do usuário, em observância às determinações previstas na Lei 13.460/2017;</li>
-                            <li>Receber, analisar e encaminhar às autoridades competentes as manifestações, acompanhando o tratamento e a efetiva conclusão das manifestações de usuário perante órgão ou entidade a que se vincula;</li>
-                            <li>Promover a adoção de mediação e conciliação entre o usuário e o órgão ou a entidade pública, sem prejuízo de outros órgãos competentes;</li>
-                            <li>Receber, analisar e responder, por meio de mecanismos proativos e reativos, as manifestações encaminhadas por usuários de serviços públicos;</li>
-                            <li>Elaborar, anualmente, relatório de gestão, que deverá consolidar as informações mencionadas no inciso VIII, e, com base nelas, apontar falhas e sugerir melhorias na prestação de serviços públicos;</li>
-                            <li>Coordenar os servidores subordinados ao órgão, podendo distribuir tarefas e delegar funções;</li>
-                            <li>Executar outras tarefas correlatas.</li>
-                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
-</main>
-
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-left">
-                <div class="footer-title">
-                    <div class="footer-icon">
-                        <img src="assets/images/brasao.png" alt="Brasão da Prefeitura" style="width: 2rem; height: 2rem;">
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/brasao.png" alt="Brasão de Pimenta Bueno">
+                    <h3>Prefeitura de Pimenta Bueno</h3>
+                    <p>Serviços Municipais</p>
+                </div>
+                
+                <div class="footer-contact-info">
+                    <h4 class="footer-contact-title">Contato</h4>
+                    <div class="contact-item">
+                        <div class="contact-label">Endereço:</div>
+                        <div class="contact-value-card">
+                            <a href="https://www.google.com/maps/place/Prefeitura+de+Pimenta+Bueno/@-11.6711213,-61.1884982,267m/data=!3m1!1e3!4m14!1m7!3m6!1s0x93b7e5005a3b3989:0xcd3130d9b910203b!2sFarm%C3%A1cia+Central+Municipal!8m2!3d-11.6764316!4d-61.1782459!16s%2Fg%2F11w7pywyq6!3m5!1s0x93b7e5d11ca56f83:0x57d5df651de4f8c3!8m2!3d-11.6708446!4d-61.1884997!16s%2Fg%2F1tdx0mq7?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                Av. Castelo Branco, 1046 - Pimenta Bueno–RO
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Prefeitura de Pimenta Bueno</h3>
-                        <p>Serviços Municipais</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-label">Telefone:</div>
+                        <div class="contact-value-card">
+                            <a href="https://wa.me/5569981162254" target="_blank">(69) 98116-2254 (Atendimento)</a><br>
+                            <a href="https://wa.me/5569981699989" target="_blank">(69) 98169-9989 (Ouvidoria)</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-label">E-mail:</div>
+                        <div class="contact-value-card">
+                            <a href="mailto:gabinete@pimentabueno.ro.gov.br">gabinete@pimentabueno.ro.gov.br</a>
+                        </div>
                     </div>
                 </div>
             </div>
             
-            <div class="footer-right">
-                <div class="footer-contact">
-                    <i data-lucide="map-pin"></i>
-                    <a href="[https://www.google.com/maps/search/?api=1&query=SEU_ENDERECO_AQUI](https://www.google.com/maps/search/?api=1&query=SEU_ENDERECO_AQUI)" target="_blank" class="map-link">
-                        <span>Av. Castelo Branco, 1046 - Pimenta Bueno–RO</span>
-                    </a>
-                </div>
-                
-                <div class="footer-contact">
-                    <a href="[https://wa.me/5569981162254](https://wa.me/5569981162254)" target="_blank" class="whatsapp-link">
-                        <img src="assets/images/whatsapp-icon.svg" alt="WhatsApp Icon" class="whatsapp-svg-icon">
-                        <span>(69) 98116-2254</span>
-                    </a>
-                    <a href="[https://wa.me/5569981699989](https://wa.me/5569981699989)" target="_blank" class="whatsapp-link">
-                        <img src="assets/images/whatsapp-icon.svg" alt="WhatsApp Icon" class="whatsapp-svg-icon">
-                        <span>(69) 98169-9989</span>
-                    </a>
-                </div>
-                
-                <div class="footer-contact">
-                    <i data-lucide="mail"></i>
-                    <a href="mailto:gabinete@pimentabueno.ro.gov.br" class="mail-link">
-                        <span>gabinete@pimentabueno.ro.gov.br</span>
-                    </a>
-                </div>
+            <div class="footer-bottom">
+                <p>© 2025 Prefeitura Municipal de Pimenta Bueno - Todos os direitos reservados</p>
             </div>
         </div>
+    </footer>
+    
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="mobile-menu-title">Departamentos</div>
+            <button class="close-menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
         
-        <div class="footer-bottom">
-            <p>© 2025 Prefeitura Municipal de Pimenta Bueno - Todos os direitos reservados</p>
+        <div class="mobile-nav">
+            <button class="mobile-nav-btn active" data-target="sri">SRI</button>
+            <button class="mobile-nav-btn" data-target="imprensa">Imprensa e Comunicação</button>
+            <button class="mobile-nav-btn" data-target="marketing">Marketing</button>
+            <button class="mobile-nav-btn" data-target="ouvidoria">Ouvidoria</button>
         </div>
     </div>
-</footer>
-
-<script src="script.js"></script>
-
+    
+    <div class="overlay"></div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
